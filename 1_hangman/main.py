@@ -1,4 +1,6 @@
-import re
+from fileinput import close
+from random import random
+import re, random
 
 art = """
     ------
@@ -11,7 +13,11 @@ art = """
 """
 print(art)
 
-answer = "What's Up, Doc?".upper()
+# More concise way to convert the file to an array compared to the while loop
+answer_pool_file = open("answers.txt", "r")
+answer_pool = answer_pool_file.readlines()
+answer_pool_file.close()
+answer = random.choice(answer_pool).strip()
 
 guessed_chars = [] # "answer_guessed"
 
