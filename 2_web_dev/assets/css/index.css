@@ -74,10 +74,26 @@ button {
     border-radius: 5px;
     color: black;
     padding: 5px;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: rgb(68, 147, 173);
+    border-color: rgb(68, 147, 173);
+    transition: all 0.2s;
+    cursor: pointer;
 }
 
 /* Make the image not overflow on x */
 img {
     width: 100%;
     border-radius: 5px;
+}
+
+#js-click-counter {
+    text-align: center;
+}
+
+#js-click-counter p {
+    padding: 20px;
 }
