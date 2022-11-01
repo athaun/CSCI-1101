@@ -2,69 +2,71 @@
 <html>
     <head>
         <title>Hello World</title>
+        <link rel="stylesheet" href="assets/css/index.css"></link>
     </head>
     <body>
-        <!-- Basic tags -->
+        <div class="content">
+            <!-- Basic tags -->
 
-        <h1>Hello World</h1>
-        <h2>Header 2</h2>
-        <p>Paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga, voluptates veritatis excepturi consequatur sit impedit neque quas ullam quisquam modi doloribus, sint veniam suscipit rerum adipisci similique nihil non?</p>
-        <a href="https://www.google.com/" target="_blank">Google</a>
+            <h1 id="title">Hello World</h1>
+            <h2>Header 2</h2>
+            <p>Paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga, voluptates veritatis excepturi consequatur sit impedit neque quas ullam quisquam modi doloribus, sint veniam suscipit rerum adipisci similique nihil non?</p>
+            <a href="https://www.google.com/" target="_blank">Google</a>
 
-        <br><br><hr>
-        <!-- Divs and spans -->
-        
-        <div>
-            <h2>Header in a div</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga, voluptates veritatis excepturi consequatur sit impedit neque quas ullam quisquam modi doloribus, sint veniam suscipit rerum adipisci similique nihil non?</p>
+            <br><br><hr>
+            <!-- Divs and spans -->
+            
+            <div>
+                <h2>Header in a div</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga, voluptates veritatis excepturi consequatur sit impedit neque quas ullam quisquam modi doloribus, sint veniam suscipit rerum adipisci similique nihil non?</p>
+            </div>
+            
+            <div>
+                <span>
+                    Text in a span in a div
+                </span>
+                <span>
+                    Text inside a span in a div after a span
+                </span>
+            </div>
+
+            <br><hr><br>
+            <!-- Inputs -->
+            
+            <div>
+                <form action="/lol" method="post">
+                    <label for="text">Username</label><br>
+                    <input type="text" name="text">
+                    <br><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password">
+                    <br><br>
+                    <input type="checkbox" name=":O">
+                    <label for=":O">Remember me :O</label> 
+                    <br><br>
+                    <button>Submit</button>
+                </form>
+            </div>
+
+            <br><hr><br>
+            <!-- Lists -->
+
+            <div>
+                <ul>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ul>
+                <ol>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ol>
+            </div>
+
+            <br><hr><br>
+            <!-- Images -->
+            <img src="assets/images/penguin.jpg" alt="Penguin">
         </div>
-        
-        <div>
-            <span>
-                Text in a span in a div
-            </span>
-            <span>
-                Text inside a span in a div after a span
-            </span>
-        </div>
-
-        <br><hr><br>
-        <!-- Inputs -->
-        
-        <div>
-            <form action="/lol" method="post">
-                <label for="text">Username</label><br>
-                <input type="text" name="text">
-                <br><br>
-                <label for="password">Password</label><br>
-                <input type="password" name="password">
-                <br><br>
-                <input type="checkbox" name=":O">
-                <label for=":O">Remember me :O</label> 
-                <br><br>
-                <button>Submit</button>
-            </form>
-        </div>
-
-        <br><hr><br>
-        <!-- Lists -->
-
-        <div>
-            <ul>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-            </ul>
-            <ol>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-            </ol>
-        </div>
-
-        <br><hr><br>
-        <!-- Images -->
-        <img src="assets/images/penguin.jpg" alt="Penguin">
-        
     </body>
 </html>
